@@ -3,6 +3,7 @@
 import MessageForm from "./MessageForm";
 import MyMessage from "./MyMessage";
 import TheirMessage from "./TheirMessage";
+import React from "react";
 
 const ChatFeed = (props) => {
     const { chats, activeChat, userName, messages } = props;
@@ -30,8 +31,8 @@ const ChatFeed = (props) => {
                     </div>
                     {/* if this is my message, chat bubble will be on the right at 18px
                     // if this is not my message, chat bubble will be on the left at 68px */}
-                    <div className="read-receipts" style={{ marginRight: isMyMessage ? '18px' : '0px', marginLeft: isMyMessage ? '0px' : '68px' }}>
-                        {renderReadReceipts(message, isMyMessage)}
+                              <div className="read-receipts" style={{ marginRight: isMyMessage ? '18px' : '0px', marginLeft: isMyMessage ? '0px' : '68px' }}>
+            {renderReadReceipts(message, isMyMessage)}
                     </div>
                 </div>
             );

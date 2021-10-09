@@ -17,6 +17,7 @@ const App = () => {
             userSecret="123123"
             // new prompt
             renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
+            // message sound
             onNewMessage={() => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play()}
     />
   );
