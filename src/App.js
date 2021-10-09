@@ -16,8 +16,11 @@ const App = () => {
             // admin password
             userSecret="123123"
             // new prompt
-            renderChatFeed={(chatAppProps)} => <ChatFeed {... chatAppProps}
-            />
-    );
-    }
-export default App
+            renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
+            onNewMessage={() => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play()}
+    />
+  );
+};
+
+// ADDITIONAL: add infinite scrolls, logout, more customizations... here
+export default App;
