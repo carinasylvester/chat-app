@@ -1,3 +1,5 @@
+// Messages sent by others
+
 const TheirMessage = () => {
     return (
         <div>

@@ -6,6 +6,7 @@ import './App.css';
 
 const App = () => {
     return (
+        // Chat Engine component
         <ChatEngine
             height="100vh"
             // retrieved from chatengine.io
@@ -15,8 +16,8 @@ const App = () => {
             // admin password
             userSecret="123123"
             // new prompt
-            renderChatFeed={(chatAppProps) => <ChatFeed {... chatAppProps}
-        />
-    :
+            renderChatFeed={(chatAppProps)} => <ChatFeed {... chatAppProps}
+            />
+    );
     }
 export default App

@@ -1,3 +1,5 @@
+// Messages sent by admin (me)
+
 const MyMessage = () => {
     return (
         <div>
