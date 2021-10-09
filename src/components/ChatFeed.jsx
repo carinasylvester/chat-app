@@ -1,3 +1,5 @@
+// Modifies the structure of the Chat Feed created by Chat
+
 import MessageForm from "./MessageForm";
 import MyMessage from "./MyMessage";
 import TheirMessage from "./TheirMessage";
@@ -49,6 +51,7 @@ const ChatFeed = (props) => {
             {renderMessages()}
             <div style={{ height: '100px' }} />
             <div className="message-form-container">
+                {/* form that users use to send messages */}
                 <MessageForm {...props} chatId={activeChat} />
             </div>
         </div>
