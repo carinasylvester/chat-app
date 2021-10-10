@@ -31,9 +31,9 @@ const ChatFeed = (props) => {
                     </div>
                     {/* if this is my message, chat bubble will be on the right at 18px
                     // if this is not my message, chat bubble will be on the left at 68px */}
-                              <div className="read-receipts" style={{ marginRight: isMyMessage ? '18px' : '0px', marginLeft: isMyMessage ? '0px' : '68px' }}>
-            {renderReadReceipts(message, isMyMessage)}
+                    <div className="read-receipts" style={{ marginRight: isMyMessage ? '18px' : '0px', marginLeft: isMyMessage ? '0px' : '68px' }}>
                     </div>
+                    {/* {renderReadReceipts(message, isMyMessage)} */}
                 </div>
             );
         });
